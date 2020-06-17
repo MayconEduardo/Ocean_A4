@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
                 etInfo.error = "Campo obrigatório"
             } else {
                 tvInfo.text = etInfo.text.toString()
+                Toast.makeText(this, "Atualizado com sucesso.", Toast.LENGTH_SHORT).show()
             }
         }
 

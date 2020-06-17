@@ -12,5 +12,10 @@ class MainActivity : AppCompatActivity() {
         btAtualizar.setOnClickListener {
             tvInfo.text = etInfo.text.toString()
         }
+
+        btLimpar.setOnClickListener {
+            tvInfo.text = "Informação digitada aparecerá aqui."
+            etInfo.text.clear()
+        }
     }
 }
